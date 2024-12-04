@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: auto;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+i {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+/* a:link {
+  color: blue;
+  text-decoration: underline;
+   background-color: transparent; 
+} */
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+a:active {
+  color: red;
+  text-decoration: none;
+}
+
+/* a:visited {
+  color: purple;
+  text-decoration: underline;
+  background-color: transparent;
+} */
+
+input,
+textarea {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 5.2vw;
+}
+
+h2 {
+  font-size: 4.8vw;
+}
+
+p,
+h3 {
+  font-size: 4vw;
+}
+
+label,
+input,
+textarea,
+legend,
+select {
+  font-size: 4vw;
+}
+
+body {
+  background-color: #d4ecff;
+}
+
+/* footer */
+footer {
+  background-color: #8dd0f9;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+/****** main *****/
+main {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 76vh;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #b0ddfe;
+  border: 1px solid #6ec3f1;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/******* asideDiv ******/
+.asideDiv {
+  overflow: auto;
+}
+
+aside {
+  font-style: italic;
+  background-color: #8dd0f9;
+  border: 1px solid yellow;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+}
+.asideDivMainText {
+  color: darkslategray;
+  padding: 10px;
+}
+
+/********* button *********/
+
+.btn {
+  height: 35px;
+  width: 140px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: linear-gradient(to left, #004ff9c7, #fff94cab, #004ff9c7);
+  border-radius: 4px;
+  box-shadow: -4px 6px 4px #bcbba3;
+  border: none;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 500ms;
+}
+.btn:hover {
+  background-position: right;
+}
+
+.btn:active {
+  box-shadow: 0px 2px #bcbba3;
+  transform: translate(0, 2px);
+}
+
+/********  500   *******/
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 3.9vw;
+  }
+
+  h2 {
+    font-size: 3.6vw;
+  }
+
+  p,
+  h3 {
+    font-size: 3vw;
+  }
+
+  label,
+  input,
+  textarea,
+  legend,
+  select {
+    font-size: 3vw;
+  }
+
+  aside {
+    width: 30%;
+    float: left;
+    border: 1px solid yellow;
+  }
+}
+/********   tablet   *******/
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.6vw;
+  }
+
+  h2 {
+    font-size: 2.4vw;
+  }
+
+  p,
+  h3 {
+    font-size: 2vw;
+  }
+
+  label,
+  input,
+  textarea,
+  legend,
+  select {
+    font-size: 2vw;
+  }
+
+  .btn {
+    height: 50px;
+    width: 200px;
+    font-size: 26px;
+  }
+
+  main {
+    min-height: 83vh;
+  }
+}
+
+/*********  desktop  ********/
+/* @media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 2.6vw;
+  }
+
+  h2 {
+    font-size: 2.4vw;
+  }
+
+  p,
+  h3 {
+    font-size: 2vw;
+  }
+
+
+} */
+
+/*********  PC  ********/
+@media only screen and (min-width: 1400px) {
+  h1 {
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 1.8vw;
+  }
+
+  p,
+  h3 {
+    font-size: 1.6vw;
+  }
+
+  label,
+  input,
+  textarea,
+  legend,
+  select {
+    font-size: 1.6vw;
+  }
+}

@@ -1,0 +1,58 @@
+/*-------- HEADER ---------*/
+header {
+  background-color: #8dd0f9;
+  border-radius: 4px;
+  padding: 2px 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+
+audio {
+  height: 40px;
+  max-width: 280px;
+}
+
+.header-title-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-logo {
+  color: #1c4588;
+}
+
+.header-span {
+  text-transform: uppercase;
+  /* color: #006400; */
+  /* color: #011a4d; */
+  color: purple;
+}
+.header-span:hover {
+  color: yellow;
+}
+
+.header-title {
+  /* color: #2659b0; */
+  color: blue;
+}
+
+.header-btn:hover {
+  color: yellow;
+}
+
+/********   tablet   *******/
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  audio {
+    width: 36%;
+  }
+}
